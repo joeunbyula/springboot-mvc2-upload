@@ -55,7 +55,7 @@ public class ServletUploadControllerV2 {
             //데이터 읽기
             InputStream inputStream = part.getInputStream();
             String body = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
-            log.info("body={}", body);
+//            log.info("body={}", body);
 
             if(StringUtils.hasText(part.getSubmittedFileName())) {
                 String fullPath = fileDir + part.getSubmittedFileName();
